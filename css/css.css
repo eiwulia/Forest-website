@@ -1,0 +1,205 @@
+.footer-distributed {
+    display: grid;
+    width: auto;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "left center right ";
+	grid-gap:10px;
+	background-color: #1A4144;
+	box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+	box-sizing: border-box;
+	width: 100%;
+	font: 16px "Montserrat";
+	text-align: left;
+	padding: 50px 60px 40px 100px;
+	min-height: 450px;
+	overflow: hidden;
+}
+
+
+
+ footer .fa{
+	 position:relative;
+	 left:-25px;
+	 top:25px;
+	 padding:0px;
+
+
+ }
+
+.footer-distributed .footer-left{
+	grid-area: left;
+	position:relative;
+	top: 75px;
+
+}
+
+
+
+.footer-distributed h3{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	font-size:32px;
+}
+
+.footer-distributed h3 span{
+	color:  white;
+}
+
+
+
+.footer-distributed .footer-links{
+	color:  #ffffff;
+	margin: 0 0 10px;
+	padding: 0;
+}
+
+.footer-distributed .footer-links a{
+	display:inline-block;
+	line-height: 1.8;
+	text-decoration: none;
+	color:  inherit;
+}
+
+.footer-distributed .footer-company-name{
+	color:  #8f9296;
+	margin: 0;
+}
+
+
+
+
+.footer-distributed .footer-center {
+	grid-area:center;
+	position:relative;
+	top: 55px;
+
+}
+
+
+
+.footer-distributed .footer-right{
+	grid-area:right;
+
+
+}
+
+.footer-distributed .footer-right p{
+	display: inline-block;
+	vertical-align: top;
+	margin: 0px 0px 0 0;
+	color: #ffffff;
+}
+
+
+.footer-distributed form{
+	display: inline-block;
+}
+
+.footer-distributed form input,
+.footer-distributed form textarea{
+	display: block;
+	border-radius: 3px;
+	box-sizing: border-box;
+	background-color:  #F5F1CE;
+	box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
+	border: none;
+	resize: none;
+
+	font: inherit;
+	font-size: 14px;
+	font-weight: normal;
+	
+
+	width: 212px;
+	padding: 18px;
+}
+
+.footer-distributed ::-webkit-input-placeholder {
+	color:  #5c666b;
+}
+
+.footer-distributed ::-moz-placeholder {
+	color:  #5c666b;
+	opacity: 1;
+}
+
+.footer-distributed :-ms-input-placeholder{
+	color:  #5c666b;
+}
+
+
+.footer-distributed form input{
+	height: 55px;
+	margin-bottom: 15px;
+
+}
+
+.footer-distributed form textarea{
+	height: 100px;
+	margin-bottom: 20px;
+    width: 212px;
+	background-color: #F5F1CE; 
+}
+
+.footer-distributed form button{
+	border-radius: 3px;
+	background-color:  #C66F44;
+	color: #ffffff;
+	border: 0;
+	padding: 15px 45px;
+	font-weight: bold;
+	float: left;
+}
+
+
+
+@media (max-width: 1000px) {
+
+	.footer-distributed {
+		font: bold 14px sans-serif;
+	}
+
+	.footer-distributed .footer-company-name{
+		font-size: 12px;
+	}
+
+	.footer-distributed form input,
+	.footer-distributed form textarea{
+		width: 250px;
+	}
+
+	.footer-distributed form button{
+		padding: 10px 35px;
+	}
+
+}
+
+@media (max-width: 800px) {
+
+	.footer-distributed{
+		padding: 30px;
+	}
+
+	.footer-distributed .footer-left,
+	.footer-distributed .footer-right{
+		float: none;
+		max-width: 300px;
+		margin: 0 auto;
+	}
+
+	.footer-distributed .footer-left{
+		margin-bottom: 0px;
+	}
+
+	.footer-distributed form{
+		margin-top: 30px;
+	}
+
+	.footer-distributed form{
+		display: block;
+	}
+
+	.footer-distributed form button{
+		float: none;
+	}
+}

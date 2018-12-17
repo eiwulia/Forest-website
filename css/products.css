@@ -1,0 +1,75 @@
+
+/* product css start */
+#productsContainer {
+	background: #f8f6e0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	align-items: baseline;
+	width: auto;
+	max-width: 90%;
+	margin: 0 auto;
+}
+.singleProductBlock {
+	flex-grow: 1;
+	padding: 20px;
+}
+@media only screen and (min-width: 1200px) {
+	.singleProductBlock {
+		max-width: 45%;
+	}
+}
+@media only screen and (max-width: 800px) {
+	.singleProductBlock {
+		padding: 20px 0;
+	}
+	#productsContainer {
+		max-width: 100%;
+	}
+}
+.singleProductBlock img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 5px;
+	display: block;
+}
+.singleProductBlock h3 span {
+	float: right;
+}
+.singleProductBlock button {
+	border: 1px solid #000;
+	border-radius: 0.5em;
+	padding: 1em;
+	background: linear-gradient(#417060, #1a4144);
+	color: #fff;
+	font-size: 1em;
+	font-weight: 800;
+	position: relative;
+	transition: background 0.5s;
+}
+.singleProductBlock button:hover {
+	background: linear-gradient(#1a4144, #417060);
+	cursor: pointer;
+	color: #ececec;
+
+}
+/*.singleProductBlock h3 span:hover {
+	cursor: pointer;
+} if more time add animate ranking using css ;) */
+
+/*
+	Hide / show text with only css super h4x0r ;D
+	v3.0
+	Now using hidden radio buttons with labels to not needing page reload.
+	Ref: https://www.w3schools.com/cssref/css_selectors.asp
+*/
+input[id^="show-"], input[id^="hide-"] { display: none; }
+input[id^="show-"]:checked ~ div[id^="moreText-"], input[id^="hide-"]:checked ~ label[for^="show-"] { display: block; }
+input[id^="hide-"]:checked ~ div[id^="moreText-"], input[id^="show-"]:checked ~ label[for^="show-"] { display: none; }
+.hiddenText label {
+	cursor: pointer;
+	display: block;
+	text-align: right;
+}
+label:hover { color: #c66f44; }
+/* product css end */

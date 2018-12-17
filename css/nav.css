@@ -1,0 +1,65 @@
+/*Copy paste for Navbar + header*/
+.HeaderAndNav {
+	line-height: 35px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background: #1A4144;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; /*Align the logg, header and navbar*/
+  align-items: center; /*vertically centering*/
+}
+.HeaderAndNav :nth-child(2) { order: 3; }
+.loggoh1 { /*Makes loggo and h1 be 1 box*/
+  display: flex;
+  justify-content: flex-end;
+	vertical-align: middle;
+}
+.imgbox {
+	position: relative;
+	top: 15px;
+  max-width: 60px;
+  max-height: auto;
+  margin: 0px;
+  padding: 0px;
+}
+.loggo {
+
+  width: 1.7em;
+  height: 1.7em;
+}
+.h1 > h1 {
+  position: relative;
+  top: 0px;
+  font-size: 1.9rem;
+  color: white;
+  display: inline-block;
+  position: relative;
+}
+/*styling for navbar starts*/
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.nav li{
+    font-size: 1.7rem;
+    display:inline;
+    color: white;
+}
+.nav a{
+    color: white;
+    display:inline-block;
+    padding:10px;
+}  /*TO DO: fix some more style with hover over effects*/
+a:link {
+color:White;
+
+  text-decoration: none;
+}
+.navItem > a:hover {
+	transition-delay: 1s;
+	transition: all 0.5s ease;
+  color: RGB(65, 112, 96);
+}
+/*styling for navbar ends*/
